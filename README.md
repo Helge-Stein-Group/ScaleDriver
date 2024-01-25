@@ -26,7 +26,7 @@ This driver gives you the ability to communicate with a Sartorius brand Secura s
 
 ### Tare and Calibration
 
-To tare the scale use `tare()` and to preforma an internal callibration use `isocal()`.
+To tare the scale use `tare()` and to preform an internal callibration use `isocal()`.
 
 ### Measuring
 
