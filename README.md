@@ -30,13 +30,19 @@ To tare the scale use `tare()` and to preforma an internal callibration use `iso
 
 ### Measuring
 
-To get a simple weight measurement use the getWeight(). If you would like to take a longer measurement over a given time period use the collectWeightTillTime(). If you would like to take a meaurement till a given weight is reached then use the collectWeightTillMix().
+To get a simple weight measurement use the `getWeight()`. If you would like to take a longer measurement over a given time period use the `collectWeightTillTime()`. If you would like to take a meaurement till a given weight is reached then use the `collectWeightTillMix()`.
 
 ## Example
 
+```python
 
+from scale_driver import Scale
 
-[Come back to this!]
+my_scale = Scale('COM7',9600,timeout=3)
+my_scale.tare()
+my_scale.getWeight()
+
+```
 
 ## Contact
 
