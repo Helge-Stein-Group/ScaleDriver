@@ -19,5 +19,5 @@ This driver gives you the ability to communicate with a Sartorius brand Secura s
 
 ## Contact
 
-[Come back to this!]
+Danika Heaney at danika.heaney@tum.de
 
