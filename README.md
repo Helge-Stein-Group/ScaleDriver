@@ -2,6 +2,21 @@
 
 This driver gives you the ability to communicate with a Sartorius brand Secura scale through a serial port USB connection.
 
+## Getting Started
+
+### Scale Settings
+
+1. Insure that the device protocol is set to PC-SBI. 
+2. The print function should be set to manual without stability. 
+
+### Setup
+
+1. Clone the repository.
+2. Turn on scale and manually level.
+3. Connect the scale via a USB cable.
+4. Open example.py and adapt it to fit your application.
+
+
 ## Features
 
 - Communicate with the scale to get weight measurements
@@ -9,15 +24,28 @@ This driver gives you the ability to communicate with a Sartorius brand Secura s
 - Configure the scale settings
 - Error handling for scale communication
 
-## Installation
+### Tare and Calibration
 
-1. [Come back to this!]
+To tare the scale use tare() and to preforma an internal callibration use isocal().
 
-## Usage
+### Measuring
+
+To get a simple weight measurement use the getWeight(). If you would like to take a longer measurement over a given time period use the collectWeightTillTime(). If you would like to take a meaurement till a given weight is reached then use the collectWeightTillMix().
+
+## Example
+
+
 
 [Come back to this!]
 
 ## Contact
 
-Danika Heaney at danika.heaney@tum.de
+Danika Heaney - danika.heaney@tum.de
+Helge Stein - helge.stein@tum.de
+
+## Acknowledgements
+
+This code was modeled after sartoriususb: https://github.com/holgi/sartoriusb
+
+
 
