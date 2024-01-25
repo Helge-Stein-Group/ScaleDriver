@@ -20,10 +20,10 @@ class Scale():
     CMD_PRINT = b"P"
     CMD_TARE = b"T"
     CMD_ISOCAL = b"Z"
-    CMD_FILTER_ENVIROMENT_VERY_STABLE = b"K"
-    CMD_FILTER_ENVIROMENT_STABLE = b"L"
-    CMD_FILTER_ENVIROMENT_UNSTABLE = b"M"
-    CMD_FILTER_ENVIROMENT_VERY_UNSTABLE = b"N"
+    # CMD_FILTER_ENVIROMENT_VERY_STABLE = b"K"
+    # CMD_FILTER_ENVIROMENT_STABLE = b"L"
+    # CMD_FILTER_ENVIROMENT_UNSTABLE = b"M"
+    # CMD_FILTER_ENVIROMENT_VERY_UNSTABLE = b"N"
 
     def __init__(self,conf,baud,timeout):
         """ Initializes the serial connection. """
