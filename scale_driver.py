@@ -110,6 +110,12 @@ class scale():
 
         return _parse_16_char_output(rest, mode)
 
+    def _is_message(raw_data):
+        """ returns the message that occured in a measurement or False """
+        for identifier in ("high", "low", "cal", "err", "--"):
+            if identifier in raw_data.lower():
+                return True
+        return False
 
     def _parse_16_char_output(raw_data, mode="unknown"):
         """ parse a 16 character measurement output
@@ -140,14 +146,6 @@ class scale():
         return Measurement(mode, value, unit, stable, None)
 
 
-    def _is_message(raw_data):
-        """ returns the message that occured in a measurement or False """
-        for identifier in ("high", "low", "cal", "err", "--"):
-            if identifier in raw_data.lower():
-                return True
-        return False
-
-
     def _remove_calibration_note(raw_data):
         """ adjusts the raw data string if a calibration note is present
 
@@ -164,3 +162,4 @@ class scale():
         if "[" in raw_data:
             raw_data = raw_data.replace("[", "").replace("]", "  ")
         return raw_data
+
