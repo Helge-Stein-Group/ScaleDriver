@@ -46,7 +46,7 @@ my_scale.getWeight()
 
 ## Contact
 
-Danika Heaney - danika.heaney@tum.de
+Danika Heaney - danika.heaney@tum.de or 
 Helge Stein - helge.stein@tum.de
 
 ## Acknowledgements
