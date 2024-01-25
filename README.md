@@ -51,7 +51,7 @@ Helge Stein - helge.stein@tum.de
 
 ## Acknowledgements
 
-This code was modeled after sartoriususb: https://github.com/holgi/sartoriusb
+This code was modeled after [sartoriususb](https://github.com/holgi/sartoriusb).
 
 
 
