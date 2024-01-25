@@ -26,26 +26,32 @@ This driver gives you the ability to communicate with a Sartorius brand Secura s
 
 ### Tare and Calibration
 
-To tare the scale use tare() and to preforma an internal callibration use isocal().
+To tare the scale use `tare()` and to preform an internal callibration use `isocal()`.
 
 ### Measuring
 
-To get a simple weight measurement use the getWeight(). If you would like to take a longer measurement over a given time period use the collectWeightTillTime(). If you would like to take a meaurement till a given weight is reached then use the collectWeightTillMix().
+To get a simple weight measurement use the `getWeight()`. If you would like to take a longer measurement over a given time period use the `collectWeightTillTime()`. If you would like to take a meaurement till a given weight is reached then use the `collectWeightTillMix()`.
 
 ## Example
 
+```python
 
+from scale_driver import Scale
 
-[Come back to this!]
+my_scale = Scale('COM7',9600,timeout=3)
+my_scale.tare()
+my_scale.getWeight()
+
+```
 
 ## Contact
 
-Danika Heaney - danika.heaney@tum.de
+Danika Heaney - danika.heaney@tum.de or 
 Helge Stein - helge.stein@tum.de
 
 ## Acknowledgements
 
-This code was modeled after sartoriususb: https://github.com/holgi/sartoriusb
+This code was modeled after [sartoriususb](https://github.com/holgi/sartoriusb).
 
 
 
